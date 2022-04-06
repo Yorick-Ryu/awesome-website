@@ -38,18 +38,17 @@
 
     $(function() {
         getJSON('/api/comments', {
-            page: {
-                {
+                page: {
                     page_index
                 }
-            }
-        }, function(err, results) {
-            if (err) {
-                return fatal(err);
-            }
-            $('#loading').hide();
-            initVM(results);
-        });
+            },
+            function(err, results) {
+                if (err) {
+                    return fatal(err);
+                }
+                $('#loading').hide();
+                initVM(results);
+            });
     });
 </script>
 
