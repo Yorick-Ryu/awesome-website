@@ -8,3 +8,4 @@ www/__pycache__/coroweb.cpython-39.pyc
 www/__pycache__/handlers.cpython-39.pyc
 beiyu
 dist/dist-awesome.tar.gz
+.vscode/settings.json
