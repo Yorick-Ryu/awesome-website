@@ -31,10 +31,10 @@
                         return $form.showFormError('CORRECT EMAIL/请输入正确的Email地址');
                     }
                     if (this.password1.length < 6) {
-                        return $form.showFormError('PASSWORD AT LEAST 6 CHAR/口令长度至少为6个字符');
+                        return $form.showFormError('PASSWORD AT LEAST 6 CHAR/密码长度至少为6个字符');
                     }
                     if (this.password1 !== this.password2) {
-                        return $form.showFormError('PASSWORD INCONSIST/两次输入的口令不一致');
+                        return $form.showFormError('PASSWORD INCONSIST/两次输入的密码不一致');
                     }
                     var email = this.email.trim().toLowerCase();
                     $form.postJSON('/api/users', {
@@ -76,15 +76,15 @@
                 </div>
             </div>
             <div class="uk-margin-top">
-                <label class="uk-form-label">PASSWORD/输入口令:</label>
+                <label class="uk-form-label">PASSWORD/输入密码:</label>
                 <div class="uk-form-controls">
-                    <input class="uk-input uk-form-width-medium" v-model="password1" type="password" maxlength="50" placeholder="输入口令">
+                    <input class="uk-input uk-form-width-medium" v-model="password1" type="password" maxlength="50" placeholder="输入密码">
                 </div>
             </div>
             <div class="uk-margin">
-                <label class="uk-form-label">REPEAT PASSWORD/重复口令:</label>
+                <label class="uk-form-label">REPEAT PASSWORD/重复密码:</label>
                 <div class="uk-form-controls">
-                    <input class="uk-input uk-form-width-medium" v-model="password2" type="password" maxlength="50" placeholder="重复口令">
+                    <input class="uk-input uk-form-width-medium" v-model="password2" type="password" maxlength="50" placeholder="重复密码">
                 </div>
             </div>
             <div class="uk-margin-large">
